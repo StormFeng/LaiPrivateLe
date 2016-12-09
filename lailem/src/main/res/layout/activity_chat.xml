@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.lailem.app.widget.pulltorefresh.PullToRefreshListView
+            android:id="@+id/pullToRefreshListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+        
+        <com.lailem.app.ui.chat.RecordAudioViewForChat  
+            android:id="@+id/recordVoiceView"
+            android:background="#E6212936"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/c_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/switch_iv"
+            android:layout_width="28.8dp"
+            android:layout_height="28.8dp"
+            android:layout_marginLeft="11.5dp"
+            android:layout_marginRight="11.5dp"
+            android:background="@drawable/ic_voice1"
+            android:tag="keyboard" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="0dp"
+            android:layout_height="34.6dp"
+            android:layout_weight="1"
+            android:textSize="13.4sp"
+            android:background="@drawable/bg_chat_et_n"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:id="@+id/face"
+            android:layout_width="28.8dp"
+            android:layout_height="28.8dp"
+            android:layout_marginLeft="11.5dp"
+            android:background="@drawable/ic_face" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="28.8dp"
+            android:layout_height="28.8dp"
+            android:layout_marginLeft="11.5dp"
+            android:layout_marginRight="11.5dp"
+            android:background="@drawable/ic_add"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+</LinearLayout>

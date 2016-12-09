@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15.4dp"
+        android:paddingLeft="12.5dp" >
+
+        <TextView
+            android:id="@+id/activeType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_activetype_green"
+            android:gravity="center"
+            android:text="聚会"
+            android:textColor="@color/white"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:id="@+id/activeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.5dp"
+            android:text="周末，沙滩排球等你来!"
+            android:textColor="@color/white"
+            android:textSize="19.2sp" />
+    </LinearLayout>
+
+</FrameLayout>

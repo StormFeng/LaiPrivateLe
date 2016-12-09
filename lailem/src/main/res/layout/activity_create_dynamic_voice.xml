@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7.8dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="16.3dp"
+            android:text="您可以输入语音对应的文本"
+            android:textColor="#FF1BC0B7"
+            android:textSize="11.5sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c_divider_line"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:inputType="textMultiLine"
+                android:padding="15.4dp"
+                android:textColor="@color/text_dark_2"
+                android:textColorHint="@color/text_low_2"
+                android:textSize="15.4sp" />
+
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="15.4dp"
+                android:layout_marginRight="15.4dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_input_clear" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c_divider_line"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:text="00:00"
+            android:textColor="#999999"
+            android:textSize="15.4dp" />
+
+        <FrameLayout
+            android:id="@+id/control"
+            android:layout_width="142dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bg_create_voice">
+
+            <ImageView
+                android:id="@+id/micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_create_voice_micro" />
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="106dp"
+                android:layout_height="106dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_create_voice_circle" />
+
+            <ImageView
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_create_voice_progress" />
+
+            <TextView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawablePadding="10.6dp"
+                android:drawableTop="@drawable/ic_create_voice_play"
+                android:text="立即播放"
+                android:textColor="@color/white"
+                android:textSize="13.4sp" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/reRecord"
+            android:layout_width="61.4dp"
+            android:layout_height="28.8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:background="@drawable/bg_create_voice_rerecord"
+            android:gravity="center"
+            android:text="重录"
+            android:textColor="#FF1BC0B7"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/window_bg">
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--   <RelativeLayout
+          android:id="@+id/headview"
+          android:layout_width="fill_parent"
+          android:layout_height="45dp"
+          android:background="@drawable/plugin_photo_camera_title_bar"
+          android:gravity="center_vertical"
+          >
+
+          <TextView
+              android:id="@+id/headerTitle"
+              android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="选取相册"
+                 android:layout_centerInParent="true"
+                 android:textSize="20sp"
+              android:textColor="#ffffff"
+              />
+
+          <Button
+              android:background="@drawable/plugin_photo_camera_title_btn_cancel"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+              android:layout_width="70dp"
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+              android:id="@+id/cancel"
+              android:text="取消"
+              android:layout_alignParentRight="true"
+              android:textSize="14sp"
+              android:textColor="#fff"
+              />
+      </RelativeLayout> -->
+
+
+    <GridView
+        android:id="@+id/fileGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar"
+        android:layout_centerInParent="true"
+        android:horizontalSpacing="2dp"
+        android:numColumns="2"
+        android:verticalSpacing="2dp"
+        />
+
+
+</RelativeLayout>

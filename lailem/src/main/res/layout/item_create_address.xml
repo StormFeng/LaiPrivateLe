@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="7.7dp"
+    android:background="@drawable/bg_create_dynamic_item"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="84.5dp"
+        android:layout_height="84.5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_me_dynamic_location" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_quotation_left" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.6dp"
+            android:text="广州市天河区思成路1号北明软件园8楼888号"
+            android:textColor="@color/text_medium_1"
+            android:textSize="14.4sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_quotation_right" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="7.5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_drag" />
+
+</LinearLayout>

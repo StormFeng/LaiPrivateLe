@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="7.7dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1"
+        android:orientation="vertical"
+        android:padding="7.7dp" >
+
+        <TextView
+            android:id="@+id/activeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_black_delete"
+            android:drawablePadding="10.6dp"
+            android:text="2015年5月2日 (周六) 上午11:20"
+            android:textColor="@color/text_medium_1"
+            android:textSize="14.4sp" />
+
+        <TextView
+            android:id="@+id/activeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="14.7dp"
+            android:drawableLeft="@drawable/ic_black_delete"
+            android:drawablePadding="10.6dp"
+            android:text="广东省广州市天河区大观路XXXX号火炉山森林公园"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:id="@+id/activeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="7dp"
+            android:drawableLeft="@drawable/ic_black_delete"
+            android:drawablePadding="10.6dp"
+            android:text="篝火晚会"
+            android:textColor="@color/text_orange"
+            android:textSize="17.3sp" />
+
+        <TextView
+            android:id="@+id/activeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15.6dp"
+            android:drawableLeft="@drawable/ic_black_delete"
+            android:drawablePadding="10.6dp"
+            android:text="请各位活动成员在参加时记得自备纸巾，因赞助方不提供，谢谢!"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+</LinearLayout>

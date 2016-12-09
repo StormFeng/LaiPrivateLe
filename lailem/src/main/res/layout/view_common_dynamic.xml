@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:text="有人说人的一生要遇到四种人，第一个是自己，第二个是最爱你的人，第三个是你最爱的人，第四个是共度一生的人。生活是现实的，后面的三个人往往不会是同一个人，如果换做你，你会如何抉择呢？" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15.4dp"
+        android:paddingTop="15.4dp" >
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/line_dot" />
+    </LinearLayout>
+
+    <com.lailem.app.widget.ImageViewFit
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_avatar"
+        app:proportion="0.6289" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15.4dp"
+        android:paddingTop="15.4dp" >
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/line_dot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_voice"
+        android:orientation="horizontal"
+        android:paddingBottom="17.3dp"
+        android:paddingLeft="15.8dp"
+        android:paddingRight="6.2dp"
+        android:paddingTop="17.3dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_voice" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="24.2dp"
+            android:layout_marginRight="10.8dp"
+            android:layout_weight="1"
+            android:text="大家今晚有什么安排呢？要是都没安排那就开约吧！"
+            android:textColor="@color/white"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3&apos;"
+            android:textColor="@color/white"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15.4dp"
+        android:paddingTop="15.4dp" >
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/line_dot" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <com.lailem.app.widget.ImageViewFit
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty"
+            app:proportion="0.5438" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_video" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15.4dp"
+        android:paddingTop="15.4dp" >
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/line_dot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.lailem.app.widget.ImageViewFit
+            android:id="@+id/mapImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty"
+            app:proportion="0.4430" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.7dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:src="@drawable/ic_quotation_left" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.7dp"
+                android:layout_marginLeft="17.3dp"
+                android:layout_marginRight="17.3dp"
+                android:layout_marginTop="8.7dp"
+                android:layout_weight="1"
+                android:text="广东省广州市天河区思成路23号宏太智慧谷"
+                android:textColor="@color/text_dark_2"
+                android:textSize="14.4sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:src="@drawable/ic_quotation_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15.4dp"
+        android:paddingTop="15.4dp" >
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@drawable/line_dot" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/vote"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:text="vote" />
+
+</LinearLayout>

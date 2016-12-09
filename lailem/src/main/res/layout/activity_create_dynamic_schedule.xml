@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15.4dp"
+                android:paddingTop="15.4dp">
+
+                <TextView
+                    android:id="@+id/showSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_see_schedule"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="预览日程"
+                    android:textColor="@color/gray_orange_selector"
+                    android:textSize="15.4sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp"
+                android:paddingRight="15.4dp">
+
+                <TextView
+                    android:layout_width="92.2dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:text="主题"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp" />
+
+                <EditText
+                    android:id="@+id/topic"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="请填写主题"
+                    android:maxLength="25"
+                    android:textColor="@color/text_medium_2"
+                    android:textColorHint="@color/text_low_2"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:textSize="15.4sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/dateTime_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp">
+
+                <TextView
+                    android:layout_width="92.2dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:text="日期"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp" />
+
+                <TextView
+                    android:id="@+id/dateTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="请选择日期"
+                    android:minHeight="48dp"
+                    android:textColor="@color/text_medium_2"
+                    android:textColorHint="@color/text_low_2"
+                    android:textSize="15.4sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15.6dp"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line" />
+
+            <LinearLayout
+                android:id="@+id/address_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp">
+
+                <TextView
+                    android:layout_width="92.2dp"
+                    android:layout_height="48dp"
+                    android:gravity="center_vertical"
+                    android:text="地点"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="请选择地址"
+                    android:minHeight="48dp"
+                    android:textColor="@color/text_medium_2"
+                    android:textColorHint="@color/text_low_2"
+                    android:textSize="15.4sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="15.6dp"
+                    android:src="@drawable/ic_arrow" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15.4dp"
+                    android:text="添加联系方式"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp" />
+
+                <com.lailem.app.widget.togglebutton.ToggleButton
+                    android:id="@+id/needContactToggle"
+                    android:layout_width="49dp"
+                    android:layout_height="29.8dp"
+                    android:layout_marginRight="14.4dp"
+                    toggle:borderWidth="1px"
+                    toggle:onColor="#4CD864" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.4dp"
+                    android:paddingRight="15.4dp">
+
+                    <TextView
+                        android:layout_width="92.2dp"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="联系人"
+                        android:textColor="@color/text_dark_2"
+                        android:textSize="15.4sp" />
+
+                    <EditText
+                        android:id="@+id/contactName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="请填写联系人"
+                        android:maxLength="10"
+                        android:textColor="@color/text_medium_2"
+                        android:textColorHint="@color/text_low_2"
+                        android:textCursorDrawable="@drawable/text_cursor"
+                        android:textSize="15.4sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15.4dp"
+                    android:paddingRight="15.4dp">
+
+                    <TextView
+                        android:layout_width="92.2dp"
+                        android:layout_height="48dp"
+                        android:gravity="center_vertical"
+                        android:text="联系方式"
+                        android:textColor="@color/text_dark_2"
+                        android:textSize="15.4sp" />
+
+                    <EditText
+                        android:id="@+id/contactPhone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="请填写联系方式"
+                        android:inputType="phone"
+                        android:textColor="@color/text_medium_2"
+                        android:textColorHint="@color/text_low_2"
+                        android:textCursorDrawable="@drawable/text_cursor"
+                        android:textSize="15.4sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line" />
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/brief"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|top"
+                    android:hint="请介绍下日程的详细内容"
+                    android:maxLength="1024"
+                    android:minHeight="160dp"
+                    android:padding="15.4dp"
+                    android:textColor="@color/text_medium_2"
+                    android:textColorHint="@color/text_low_2"
+                    android:textCursorDrawable="@drawable/text_cursor"
+                    android:textSize="15.4sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/c_divider_line" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:drawable="@drawable/bg_group_notice_btn"></item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#2D000000"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:drawable="@drawable/bg_group_notice_btn" android:state_pressed="false"></item>
+
+</selector>

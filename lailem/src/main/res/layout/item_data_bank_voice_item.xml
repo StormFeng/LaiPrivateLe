@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_voice"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="12.3dp"
+        android:text="云小舞"
+        android:textColor="@color/white"
+        android:textSize="13.4sp"/>
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="12.3dp"
+        android:layout_marginTop="9.6dp"
+        android:text="3&apos;"
+        android:textColor="@color/white"
+        android:textSize="13.4sp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/playVoice"
+            android:layout_width="54.4dp"
+            android:layout_height="54.4dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_voice"/>
+
+        <ImageView
+            android:id="@+id/playProgress"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_voice_play_progress"
+            android:visibility="invisible"/>
+    </FrameLayout>
+</FrameLayout>
+

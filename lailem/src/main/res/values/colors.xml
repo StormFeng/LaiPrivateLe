@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 背景颜色 -->
+    <color name="orange">#E56032</color>
+    <color name="default_image_bg">#E5E5E5</color>
+    <color name="window_bg">#F3F5F7</color>
+    <color name="topbar_bg">#212936</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!-- 文字颜色 -->
+    <color name="text_orange">#E56032</color>
+    <color name="text_dark_1">#000000</color>
+    <color name="text_dark_2">#202020</color>
+    <color name="text_medium_1">#606060</color>
+    <color name="text_medium_2">#909090</color>
+    <color name="text_low_1">#B0B0B0</color>
+    <color name="text_low_2">#D0D0D0</color>
+    <color name="main_tab_n">#7B7D81</color>
+    <!-- 线条边框颜色 -->
+    <color name="line">#EEEEEE</color>
+    <drawable name="line">#D7D7D7</drawable>
+    <!-- 背景遮罩颜色 -->
+    <color name="mask_low">#4D000000</color>
+    <color name="mask_medium">#7F000000</color>
+    <color name="mask_dark">#C0000000</color>
+    <color name="item_bg_for_conversation_top">#F3F9FB</color>
+
+    <drawable name="dark_mask">#33000000</drawable>
+
+    <!-- ==================zxing=================== -->
+    <color name="possible_result_points">#c0ffbd21</color>
+    <!-- Android standard ICS color -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <!-- =====================zxing end=================== -->
+
+    <color name="black_translucent">#50000000</color>
+
+    <color name="blue_text">#468EE5</color>
+
+</resources>

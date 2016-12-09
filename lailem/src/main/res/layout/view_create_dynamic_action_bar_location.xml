@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_c_d_rect_corner_dot"
+                android:scaleType="center"
+                android:src="@drawable/ic_c_d_add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="15dp"
+                android:text="点击选择位置"
+                android:textColor="#BBBBBB"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/autoFitView"
+                android:layout_width="270dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_c_d_location_corner_rect"
+                    android:padding="1dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/empty" />
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:src="@drawable/ic_c_d_delete_selector" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_c_d_address"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:singleLine="true"
+                        android:text="宏太智慧谷"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:singleLine="true"
+                        android:text="广东省广州市天河区思成路"
+                        android:textColor="#90FFFFFF"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/reAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="10dp"
+                android:text="点击重新选择位置"
+                android:textColor="#BBBBBB"
+                android:textSize="13sp" />
+        </FrameLayout>
+    </ViewFlipper>
+</FrameLayout>

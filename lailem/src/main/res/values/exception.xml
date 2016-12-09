@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="your_network_error">您的服务器繁忙啦！</string>
+    <string name="network_not_connected">网络连接失败，请检查您的网络设置</string>
+    <string name="xml_parser_failed">数据解析异常</string>
+    <string name="io_exception_error">文件流异常</string>
+    <string name="http_status_code_error">网络异常，错误码：%d</string>
+    <string name="http_exception_error">网络异常，请求超时</string>
+    <string name="socket_exception_error">网络异常，读取数据超时</string>
+    <string name="app_run_code_error">应用程序运行时异常</string>
+    <string name="server_run_code_error">服务器返回异常</string>
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="submit_report">提交报告</string>
+
+    <!-- 后台返回的errorCode -->
+    <string name="noAuth">没有权限</string>
+    <!--公共的错误码		object-->
+    <string name="clientKeyError">安全验证失败，请重新登陆</string>
+    <string name="invalidParam">无效的请求参数</string>
+    <string name="serverProcedureError">服务端程序错误</string>
+    <string name="tokenError">token失效或过期，表重新登陆</string>
+    <string name="tokenTimeLimit">token已过期，请重新登陆</string>
+    <!--帐号相关的错误码		object-->
+    <string name="accountExist">帐号已存在</string>
+    <string name="accountNotExist">帐号不存在</string>
+    <string name="accountOrPasswordError">帐号或密码错误</string>
+    <string name="passwordError">密码错误</string>
+    <string name="phoneError">手机号错误</string>
+    <string name="phoneExist">手机号已存在</string>
+    <string name="phoneNotExist">手机号不存在</string>
+    <string name="phoneRegister">手机号已经被注册</string>
+    <string name="tagCountLimit">标签数超过限制</string>
+    <string name="usernameExist">用户名已存在</string>
+    <string name="usernameSeted">已经设置过用户名</string>
+    <!--投票		object-->
+    <string name="voteCountError">	投票数量错误</string>
+    <!--群组与活动相关的错误码		object-->
+    <string name="actiCountLimit">你的活动数量达到上限</string>
+    <string name="actiMemberFull">活动成员已满</string>
+    <string name="actiNotExist">活动不存在</string>
+    <string name="alreadyActiMembers">已经是活动的成员</string>
+    <string name="alreadyGroupMembers">已经是群组的成员</string>
+    <string name="alreadyInvitecodeError">邀请码错误</string>
+    <string name="groupCountLimit">你的群组数量达到上限</string>
+    <string name="groupMemberFull">群成员已满</string>
+    <string name="groupNotExist">群组不存在</string>
+    <string name="notGroupMember">非群成员</string>
+    <string name="privateActivityNotMember">此用户不是此私有活动成员</string>
+    <string name="privateGroupNotMember">此用户不是此私有群组成员</string>
+    <string name="voteActivityNoAuthority">投票活动没有发布动态权限</string>
+    <!--验证码相关的错误码		object-->
+    <string name="authCodeError">验证码错误</string>
+    <string name="authCodeTimeLimit">验证码过期</string>
+
+</resources>

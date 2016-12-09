@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_title_bg"
+            android:orientation="vertical"
+            android:paddingLeft="32.6dp"
+            android:paddingRight="30dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27.1dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="邀请好友参与活动"
+                android:textColor="@color/text_dark_2"
+                android:textSize="17.3dp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="28.6dp"
+                android:layout_marginTop="13.9dp"
+                android:lineSpacingMultiplier="1.3"
+                android:text="邀请的好友可以通过手机网页参与群组活动哟！"
+                android:textColor="@color/text_medium_1"
+                android:textSize="13.4dp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="23.5dp"
+                android:paddingTop="23.5dp"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/wechatMoment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_wechatmoment_selector"
+                        android:gravity="center"
+                        android:text="朋友圈" />
+
+                    <TextView
+                        android:id="@+id/wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_wechat_selector"
+                        android:gravity="center"
+                        android:text="微信好友" />
+
+                    <TextView
+                        android:id="@+id/qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_qq_selector"
+                        android:gravity="center"
+                        android:text="QQ" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp" >
+
+                    <TextView
+                        android:id="@+id/qzone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_qzone_selector"
+                        android:gravity="center"
+                        android:text="QQ空间" />
+
+                    <TextView
+                        android:id="@+id/sinaWeibo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_weibo_selector"
+                        android:gravity="center"
+                        android:text="新浪微博" />
+
+                    <TextView
+                        android:id="@+id/sms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_message_selector"
+                        android:gravity="center"
+                        android:text="短信" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp" >
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_email_selector"
+                        android:gravity="center"
+                        android:text="邮件" />
+
+                    <TextView
+                        android:id="@+id/copyLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_copylink_selector"
+                        android:gravity="center"
+                        android:text="复制链接" />
+
+                    <TextView
+                        android:id="@+id/qrcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="13.4sp"
+                        android:drawableTop="@drawable/ic_invite_qrcode_selector"
+                        android:gravity="center"
+                        android:text="二维码" />
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:paddingRight="26.1dp"
+        android:paddingTop="26.4dp"
+        android:src="@drawable/ic_dialog_close" />
+
+</FrameLayout>

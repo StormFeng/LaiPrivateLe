@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19.2dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint="请说说您加群理由哟!"
+                android:minHeight="140.2dp"
+                android:paddingBottom="15.4dp"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:paddingTop="15.4dp"
+                android:textColor="@color/text_medium_2"
+                android:textColorHint="@color/text_low_2"
+                android:textSize="15.4sp">
+            </EditText>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="42.2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="45.1dp"
+                android:background="@drawable/bg_capsule_orange_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="申请加入"
+                android:textColor="@color/white"
+                android:textSize="15.4sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

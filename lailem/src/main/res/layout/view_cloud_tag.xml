@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/top1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="30dp"
+            android:text="附近活动"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/top2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="30dp"
+            android:text="发布活动"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/top3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="33dp"
+            android:text="组织活动"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="活动聚会神器 - 来了"
+        android:textColor="@color/white"
+        android:textSize="26.9sp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <TextView
+            android:id="@+id/bottom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索活动"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="38dp"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/bottom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报名活动"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="38dp"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/bottom3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投票活动"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="78dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/bottom4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="126dp"
+            android:text="活动互动"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+        <TextView
+            android:id="@+id/bottom5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出活动"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="126dp"
+            android:layout_marginTop="146dp"
+            android:textColor="@color/white"
+            android:textSize="15.4sp"/>
+
+    </FrameLayout>
+</LinearLayout>

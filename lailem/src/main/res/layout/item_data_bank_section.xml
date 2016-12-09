@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lailem.app.widget.astickyheader.HeaderLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/section"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/window_bg"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15.4dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"
+        android:textColor="#999999"
+        android:textSize="13.4sp" />
+
+</com.lailem.app.widget.astickyheader.HeaderLayout>

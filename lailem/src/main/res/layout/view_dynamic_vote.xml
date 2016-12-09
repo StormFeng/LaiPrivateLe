@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dynamic_item_wrap"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q:今晚大家想要去哪里吃饭?"
+        android:textColor="@color/text_dark_2"
+        android:textSize="14.4sp" />
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="暂时先只有这几家可以选，其它店都满客了."
+        android:textColor="@color/text_medium_1"
+        android:textSize="11.5sp" />
+
+    <LinearLayout
+        android:id="@+id/choiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/actionArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/hasVoteCount"
+            android:layout_width="115dp"
+            android:layout_height="36dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_capsule_orange_hollow"
+            android:gravity="center"
+            android:text="3人已投票"
+            android:textColor="@color/text_orange"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:id="@+id/addVote"
+            android:layout_width="115dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/bg_capsule_orange_hollow"
+            android:gravity="center"
+            android:text="投票"
+            android:textColor="@color/text_orange"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+</LinearLayout>

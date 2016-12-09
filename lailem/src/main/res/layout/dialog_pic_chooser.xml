@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="38dp"
+        android:paddingTop="38dp" >
+
+        <TextView
+            android:id="@+id/fromCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:drawablePadding="38dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="拍照照片"
+            android:textColor="#8F8E8E"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/fromGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawablePadding="38dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="相册照片"
+            android:textColor="#8F8E8E"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/c_item_selector"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="取消"
+        android:textColor="@color/orange"
+        android:textSize="17dp" />
+
+</LinearLayout>

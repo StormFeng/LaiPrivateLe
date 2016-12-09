@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:\android-studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/lailem" />
+            <option value="$PROJECT_DIR$/lailemBaidu" />
+            <option value="$PROJECT_DIR$/lailemDaoCore" />
+            <option value="$PROJECT_DIR$/lailemQupaiSdk101" />
+            <option value="$PROJECT_DIR$/lailemWeiboSDK" />
+            <option value="$PROJECT_DIR$/lailemchat" />
+            <option value="$PROJECT_DIR$/lailemimageloader" />
+            <option value="$PROJECT_DIR$/lailemzxing" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

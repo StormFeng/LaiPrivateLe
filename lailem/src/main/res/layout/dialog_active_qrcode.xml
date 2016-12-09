@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginRight="15.4dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="陪你一起看世界的繁华"
+                android:textColor="#202020"
+                android:textSize="15.4sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginRight="15.4dp"
+                android:layout_marginTop="15.4dp"
+                android:gravity="center"
+                android:text="来了群号：16769yu0"
+                android:textColor="#B0B0B0"
+                android:textSize="13.4sp" />
+
+            <com.lailem.app.widget.SquareImageView
+                android:id="@+id/qrCode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginRight="15.4dp"
+                android:background="@drawable/empty"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginRight="15.4dp"
+                android:drawableLeft="@drawable/ic_dialog_loc_mark_green"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="广州天河国家软件产业基地"
+                android:textColor="#B0B0B0"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/saveQrCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/dialog_last_item_bg_green"
+                android:gravity="center"
+                android:text="保存二维码"
+                android:textColor="@color/white"
+                android:textSize="16.4sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:src="@drawable/ic_dialog_close_green" />
+</FrameLayout>

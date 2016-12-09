@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RadioButton
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/c_item_selector"
+        android:button="@null"
+        android:drawableRight="@drawable/c_checkbox"
+        android:paddingLeft="15.4dp"
+        android:paddingRight="15.6dp"
+        android:text="广州"
+        android:checked="true"
+        android:textColor="@color/text_dark_2"
+        android:textSize="15.4dp" />
+
+</LinearLayout>

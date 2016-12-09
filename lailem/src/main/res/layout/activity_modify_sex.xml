@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/sexRg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/c_item_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/c_checkbox"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15.4dp"
+                    android:paddingRight="15.4dp"
+                    android:text="男"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/c_item_selector"
+                    android:button="@null"
+                    android:drawableRight="@drawable/c_checkbox"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15.4dp"
+                    android:paddingRight="15.4dp"
+                    android:text="女"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/c_divider_line" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

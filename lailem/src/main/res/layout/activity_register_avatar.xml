@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_login_back"
+                android:drawablePadding="4dp"
+                android:paddingBottom="15.4dp"
+                android:paddingLeft="9.6dp"
+                android:paddingTop="15.4dp"
+                android:text="上一步"
+                android:textColor="#222222"
+                android:textSize="16.3sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="19.2dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/login_progress_rotation"
+                android:indeterminateDuration="10"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/headTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28.7dp"
+            android:text="展示头像"
+            android:textColor="@color/text_dark_1"
+            android:textSize="21.1sp" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.4dp"
+            android:text="真实的头像有利于获得异性的好感哟！"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="180.5dp"
+            android:layout_height="180.5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60.9dp"
+            android:background="@drawable/bg_login_upload_avatar" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="112.3dp"
+        android:background="@drawable/orange_btn"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="进入来了"
+        android:textColor="@color/white"
+        android:textSize="17.3sp" />
+
+</RelativeLayout>

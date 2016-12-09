@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16.3dp"
+        android:paddingRight="15.6dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_group_notice_man" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16.2dp"
+            android:background="@drawable/bg_group_notice_unread"
+            android:gravity="center"
+            android:text="未读"
+            android:textColor="@color/white"
+            android:textSize="11.5sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.6dp"
+            android:text="Yancy申请加入群组"
+            android:textColor="#222222"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voiceLL"
+        android:layout_width="259dp"
+        android:layout_height="38.4dp"
+        android:layout_marginLeft="15.4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_group_notice_btn_selector"
+        android:orientation="horizontal"
+        android:paddingLeft="16.3dp">
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_voice_left" />
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17.3dp"
+            android:layout_weight="1"
+            android:text="12’"
+            android:textColor="@color/text_medium_2"
+            android:textSize="13.4sp" />
+
+        <ImageView
+            android:id="@+id/reddot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6.7dp"
+            android:layout_marginTop="6.7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_reddot" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36.5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_group_notice_btn_selector"
+            android:gravity="center"
+            android:text="忽略"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="61.4dp"
+            android:background="@drawable/bg_group_notice_btn_selector"
+            android:gravity="center"
+            android:text="同意"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.4dp"
+        android:layout_marginRight="15.4dp"
+        android:layout_marginTop="37.4dp"
+        android:background="#FFEEEEEE"
+        android:orientation="horizontal"
+        android:padding="7.7dp">
+
+        <ImageView
+            android:id="@+id/group_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/default_avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="11.5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/group_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="活动名称，这里是活动名称"
+                android:textColor="#FF4A90E2"
+                android:textSize="14.4sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19.2dp"
+        android:background="@drawable/c_inset_line_15dot4" />
+
+    <LinearLayout
+        android:id="@+id/user_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="55.7dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15.4dp"
+        android:paddingRight="15.6dp">
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="34.6dp"
+            android:layout_height="34.6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_avatar" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11.5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yancy"
+                android:textColor="#4A90E2"
+                android:textSize="14.4sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3.6dp"
+                android:text="今天 13：25"
+                android:textColor="#999999"
+                android:textSize="10.6sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/right_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="7.9dp"
+            android:drawableRight="@drawable/ic_arrow"
+            android:text="28人已读"
+            android:textColor="#999999"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+</LinearLayout>

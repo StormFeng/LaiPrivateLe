@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_dynamic_item_wrap"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="春节放假通知"
+            android:textColor="#4A90E2"
+            android:textSize="16.4sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.2"
+            android:text="有人说人的一生要遇到四种人，第一个是自己，第二个是最爱你的人，第三个是你最爱的人，第四个是共度一生的人。生活是现实的，后面的三个人往往不会是同一个人，如果换做你，你会如何抉择呢？"
+            android:textColor="#202020"
+            android:textSize="14.4sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/groupInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="2dp">
+
+            <TextView
+                android:id="@+id/groupName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="周末，沙滩排球等你来"
+                android:textColor="#202020"
+                android:textSize="19.2sp" />
+
+            <com.lailem.app.widget.FlowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                app:horizontalSpacing="10dp"
+                app:verticalSpacing="5dp">
+
+                <TextView
+                    android:id="@+id/groupType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_activetype_pink"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="聚会"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tagOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_group_tag_1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="tag1"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tagTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_group_tag_2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="tag2"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tagThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_group_tag_3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="tag3"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </com.lailem.app.widget.FlowLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/ic_qrcode_small" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.6dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_arrow" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line_light" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:paddingBottom="15.4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15.4dp"
+        android:text="我一群热爱篮球是少年，喜欢在球场上挥洒汗水，即时有过泪水"
+        android:textColor="#666666"
+        android:textSize="11.5sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line_light" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/c_divider_line_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/showNotice"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_group_home_notice"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="群组通知"
+                android:textColor="#202020"
+                android:textSize="16.4sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/showActives"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_group_home_active"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="群组活动"
+                android:textColor="#202020"
+                android:textSize="16.4sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/invite"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_group_home_invite"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="邀请好友"
+                android:textColor="#202020"
+                android:textSize="16.4sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/showMembers"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="1px"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_group_home_member"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="群组成员"
+                android:textColor="#202020"
+                android:textSize="16.4sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/showDataBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1px"
+        android:background="@drawable/c_item_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/ic_active_detail_databank"
+                android:drawablePadding="14dp"
+                android:gravity="center_vertical"
+                android:text="资料库"
+                android:textColor="#202020"
+                android:textSize="16.4sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_arrow" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line_light" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/c_divider_line_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/addNotice"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_btn_corner"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_group_home_add_notice"
+                    android:drawablePadding="15.4dp"
+                    android:gravity="center"
+                    android:text="发表通知"
+                    android:textColor="#606060"
+                    android:textSize="15.4sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addSchedule"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_gray_btn_corner"
+                android:paddingLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_group_home_add_schedule"
+                    android:drawablePadding="15.4dp"
+                    android:gravity="center"
+                    android:text="发表日程"
+                    android:textColor="#606060"
+                    android:textSize="15.4sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c_divider_line_light" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/c_divider_line_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/addActive"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_corner_dot">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_group_home_add_active"
+                    android:drawablePadding="15.4dp"
+                    android:gravity="center"
+                    android:text="发起活动"
+                    android:textColor="#606060"
+                    android:textSize="15.4sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addDynamic"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rect_corner_dot">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/ic_group_home_add_dynamic"
+                    android:drawablePadding="15.4dp"
+                    android:gravity="center"
+                    android:text="发表动态"
+                    android:textColor="#606060"
+                    android:textSize="15.4sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/c_divider_line_light" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/c_divider_line_light" />
+    </LinearLayout>
+</LinearLayout>

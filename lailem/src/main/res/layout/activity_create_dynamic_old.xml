@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/topbar_bg">
+
+        <ImageButton
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="18dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/ic_topbar_close" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="内容"
+            android:textColor="@color/topbar_white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="发布"
+            android:textColor="@color/topbar_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/publish"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="预览"
+            android:textColor="@color/topbar_white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您还未添加内容哟！"
+                android:textColor="@color/text_medium_1"
+                android:textSize="17.3sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.6dp"
+                android:text="点击下方按钮即可发表相应类型内容"
+                android:textColor="@color/text_medium_2"
+                android:textSize="13.4sp" />
+        </LinearLayout>
+
+        <com.lailem.app.widget.dragsortlistview.DragSortListView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7.7dp"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:listSelector="#00000000"
+            app:drag_handle_id="@+id/drag_handle"
+            app:drag_start_mode="onLongPress"
+            app:float_background_color="@android:color/transparent"
+            app:remove_enabled="false"
+            app:sort_enabled="true" />
+    </ViewFlipper>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <TextView
+                    android:id="@+id/addText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_text"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="文本"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp" />
+
+                <TextView
+                    android:id="@+id/addImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_image"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="照片"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp" />
+
+                <TextView
+                    android:id="@+id/addVideo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_video"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="视频"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp" />
+
+                <TextView
+                    android:id="@+id/addVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_voice"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="语音"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp" />
+
+                <TextView
+                    android:id="@+id/addAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_address"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="位置"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp" />
+
+                <TextView
+                    android:id="@+id/addSchedule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_schedule"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="日程"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/addVote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6.7dp"
+                    android:drawableTop="@drawable/ic_create_dynamic_schedule"
+                    android:gravity="center"
+                    android:paddingBottom="3.4dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="10.6dp"
+                    android:text="投票"
+                    android:textColor="#666666"
+                    android:textSize="10.6sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="7.7dp"
+            android:paddingRight="7.7dp"
+            android:src="@drawable/ic_arrow"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

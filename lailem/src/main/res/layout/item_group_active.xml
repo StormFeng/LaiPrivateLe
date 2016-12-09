@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/c_item_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.4dp"
+        android:layout_marginRight="15.4dp"
+        android:layout_marginTop="15.4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="36.5dp"
+            android:layout_height="36.5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="7.7dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    fontPath="@string/font_bold"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="广州树酶派音乐节"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_loc"
+                    android:drawablePadding="4.3dp"
+                    android:text="200m"
+                    android:textColor="#8E8E93"
+                    android:textSize="11.5sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="今天 19:30"
+                android:textColor="@color/text_medium_2"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.4dp"
+        android:layout_marginRight="15.4dp"
+        android:layout_marginTop="14.4dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="曾以为我会忘了你，象忘记一颗夏夜的星。以为我会恨你发誓不再提起你，然而一切只是自欺欺人。"
+        android:textColor="@color/text_dark_2"
+        android:textSize="14.4sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15.4dp"
+        android:layout_marginLeft="15.4dp"
+        android:layout_marginRight="15.4dp"
+        android:layout_marginTop="20.5dp"
+        android:background="@drawable/c_divider_line" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7.7dp"
+        android:paddingRight="7.7dp" >
+
+        <com.lailem.app.widget.ImageViewFit
+            android:id="@+id/activeImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty"
+            app:proportion="0.6686" />
+
+        <ImageView
+            android:id="@+id/mask"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#33000000" />
+
+        <TextView
+            android:id="@+id/activeJoinCount"
+            android:layout_width="wrap_content"
+            android:layout_height="21.1dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="7.7dp"
+            android:background="#454865"
+            android:gravity="center"
+            android:paddingLeft="6.1dp"
+            android:paddingRight="6.1dp"
+            android:text="118人参加"
+            android:textColor="@color/white"
+            android:textSize="10.6sp" />
+
+        <TextView
+            android:id="@+id/activeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:text="天河吉他爱好者周末欢聚"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="38dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/activeAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天河·车陂"
+                android:textColor="@color/white"
+                android:textSize="11.5sp" />
+
+            <TextView
+                android:id="@+id/activeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21.1dp"
+                android:text="周六 05/04 22:00"
+                android:textColor="@color/white"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

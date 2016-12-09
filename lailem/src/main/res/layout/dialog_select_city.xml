@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69.1dp"
+        android:background="@drawable/dialog_title_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="32.6dp"
+            android:text="请选择居住城市"
+            android:textColor="@color/orange"
+            android:textSize="17.3sp"/>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/orange"
+            android:textSize="13.4sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contentArea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/province"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@drawable/c_divider_line"
+            android:listSelector="@drawable/c_item_selector">
+        </ListView>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line"/>
+
+        <ListView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:divider="@drawable/c_divider_line"
+            android:listSelector="@drawable/c_item_selector">
+        </ListView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line"/>
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="fill_parent"
+        android:layout_height="52.3dp"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/text_dark_2"
+        android:textSize="17.3sp"/>
+
+</LinearLayout>

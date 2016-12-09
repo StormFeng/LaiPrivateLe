@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/c_item_selector"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="28.1dp">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="34.6dp"
+            android:layout_height="34.6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="9.6dp"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="61.4dp"
+            android:layout_marginTop="17.3dp"
+            android:text="笑得那么灿烂"
+            android:textColor="@color/text_orange"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="61.4dp"
+            android:layout_marginRight="22.1dp"
+            android:layout_marginTop="49.9dp"
+            android:text="写得真心不错，就是没看懂呢！"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="11.7dp"
+            android:layout_marginTop="16.3dp"
+            android:gravity="right"
+            android:text="5月1日 18:49"
+            android:textColor="#999999"
+            android:textSize="10.6sp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+</LinearLayout>

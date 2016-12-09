@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.8dp"
+        android:layout_marginRight="15.8dp"
+        android:layout_marginTop="15.4dp"
+        android:background="@drawable/bg_searchbar"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/searchBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="7.7dp"
+            android:gravity="center"
+            android:hint="请输入搜索内容"
+            android:textColor="@color/text_medium_2"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.lailem.app.widget.pulltorefresh.PullToRefreshSectionListView
+            android:id="@+id/pullToRefreshListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null" />
+
+        <com.lailem.app.widget.IndexBar
+            android:id="@+id/indexBar"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="15.4dp"
+            android:layout_marginTop="15.4dp" />
+    </FrameLayout>
+
+</LinearLayout>

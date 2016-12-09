@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="15.4dp"
+    android:paddingTop="15.4dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <RadioButton
+        android:id="@+id/radio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_item_selector"
+        android:button="@null"
+        android:drawableRight="@drawable/c_checkbox"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="15.4dp"
+        android:paddingRight="15.4dp"
+        android:text="建议"
+        android:textColor="@color/text_dark_2"
+        android:textSize="15.4sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+</LinearLayout>

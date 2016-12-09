@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_dynamic_item_wrap"
+              android:orientation="vertical"
+              android:padding="15.4dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Q:今晚大家想要去哪里吃饭?"
+        android:textColor="@color/text_dark_2"
+        android:textSize="14.4sp"/>
+
+    <TextView
+        android:id="@+id/remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="暂时先只有这几家可以选，其它店都满客了."
+        android:textColor="@color/text_medium_1"
+        android:textSize="11.5sp"/>
+
+    <LinearLayout
+        android:id="@+id/choiceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+1，清除log
+2，修改AppContext中Debug=false
+3，修改Lailem.c中接口中environment常量为正式环境
+4，修改AndroidManifest中的版本号和版本名称

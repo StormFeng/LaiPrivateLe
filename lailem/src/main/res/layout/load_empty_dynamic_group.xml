@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:paddingTop="15.4dp" >
+
+    <LinearLayout
+        android:id="@+id/see"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_c_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="9.6dp"
+        android:paddingTop="16.3dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_green_bulb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.3dp"
+            android:text="群组来了"
+            android:textColor="#202020"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:layout_width="54dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="18.9dp"
+            android:background="@drawable/bg_capsule_orange_hollow"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="@color/orange"
+            android:textSize="15.4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_c_card"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_dot_rect"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="38.4dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_plus_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22.1dp"
+                android:gravity="center"
+                android:text="您尚未加入群组立即创建"
+                android:textColor="#909090"
+                android:textSize="15.4sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="appstart_keywords_one">
+        <item>活动聚会神器 - 来了</item>
+        <item>附近活动</item>
+        <item>发布活动</item>
+        <item>组织活动</item>
+        <item>搜索活动</item>
+        <item>报名活动</item>
+        <item>投票活动</item>
+        <item>活动互动</item>
+        <item>退出活动</item>
+    </string-array>
+    <string-array name="appstart_keywords_two">
+        <item>群组、互动神器 - 来了</item>
+        <item>附近群组</item>
+        <item>发布群组</item>
+        <item>创建群组</item>
+        <item>搜索群组</item>
+        <item>加入群组</item>
+        <item>群组活动</item>
+        <item>群组互动</item>
+        <item>退出群组</item>
+    </string-array>
+    <string-array name="appstart_keywords_three">
+        <item>约会、搭讪神器 - 来了</item>
+        <item>附近好友</item>
+        <item>活动好友</item>
+        <item>相约活动</item>
+        <item>群组好友</item>
+        <item>即时聊天</item>
+        <item>陌生搭讪</item>
+        <item>爱好互动</item>
+        <item>告别寂寞</item>
+    </string-array>
+    <string-array name="active_near_time_filter_name">
+        <item>今天</item>
+        <item>明天</item>
+        <item>周末</item>
+    </string-array>
+    <string-array name="active_near_time_filter_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="add_dynamic_choice_title">
+        <item>拍照</item>
+        <item>相册</item>
+        <item>文字</item>
+        <item>视频</item>
+        <item>录音</item>
+        <item>位置</item>
+    </string-array>
+
+    <string-array name="add_dynamic_choice_icon">
+        <item>ic_add_dynamic_photo_selector</item>
+        <item>ic_add_dynamic_gallery_selector</item>
+        <item>ic_add_dynamic_text_selector</item>
+        <item>ic_add_dynamic_video_selector</item>
+        <item>ic_add_dynamic_voice_selector</item>
+        <item>ic_add_dynamic_address_selector</item>
+    </string-array>
+
+    <string-array name="dialog_tip_content">
+        <item>世界会向那些有目标和远见的人让路</item>
+        <item>生命不可能有两次，但许多人连一次也不善于度过</item>
+        <item>成功的人是跟别人学习经验，失败的人只跟自己学习经验</item>
+        <item>从来不跌倒不算光彩，每次跌倒后能再站起来，才是最大的荣耀</item>
+        <item>爱情就像两个拉橡皮筋的人，受伤的总是不愿放手的那一个</item>
+        <item>示爱者是动物，被爱者是植物。如果爱被拒绝，离开的当然是动物，因为植物是不会生出脚来跑路的</item>
+        <item>业精于勤，荒于嬉；行成于思，毁于随</item>
+        <item>读万卷书，行万里路</item>
+    </string-array>
+
+</resources>

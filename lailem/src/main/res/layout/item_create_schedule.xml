@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_create_dynamic_item"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_active_schedule_date" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.6dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="2015年5月20日 (周六) 上午11:20"
+                android:textColor="@color/text_dark_2"
+                android:textSize="14.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/address_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.7dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_active_schedule_address" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="广东省广州市天河区大观路XXXX号火炉山森林公园"
+                android:textColor="@color/text_dark_2"
+                android:textSize="14.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contact_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.7dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginTop="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_active_schedule_man" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="联系人 联系电话"
+                android:textColor="@color/text_dark_2"
+                android:textSize="14.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14.7dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_active_schedule_anchor" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="篝火晚会"
+                android:textColor="#4A90E2"
+                android:textSize="16.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.9dp"
+            android:orientation="horizontal"
+            android:paddingBottom="15.3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginTop="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_active_schedule_detail" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="请各位活动成员在参加时记得自备纸巾，因赞助方不提供，谢谢!\n活动流程:\n1、活动流程第一项:鸣炮\n2、活动流程第二项:奏乐\n3、活动流程第三项:一拜天地\n4、活动流程第四项:二拜高堂"
+                android:textColor="@color/text_dark_2"
+                android:textSize="14.4sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    `
+
+    <ImageView
+        android:id="@id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="7.5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_drag" />
+
+</LinearLayout>

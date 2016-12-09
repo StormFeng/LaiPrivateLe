@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.lailem.app.widget.dragsortlistview.DragSortListView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:dividerHeight="0dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:descendantFocusability="beforeDescendants"
+        android:listSelector="@drawable/c_item_selector"
+        app:drag_handle_id="@+id/drag_handle"
+        app:remove_enabled="true"
+        app:remove_mode="flingRemove" />
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

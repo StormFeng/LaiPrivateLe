@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lailem.app"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/window_bg"
+        android:paddingBottom="9dp"
+        android:paddingLeft="15.4sp"
+        android:paddingTop="9sp"
+        android:text="筛选条件"
+        android:textColor="@color/text_medium_2"
+        android:textSize="13.4sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="23dp" >
+
+        <RadioButton
+            android:id="@+id/noTimeFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15.4dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_condition"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="不限时间"
+            android:textColor="@color/condition"
+            android:textSize="13.4sp" />
+
+        <com.lailem.app.widget.FlowLayout
+            android:id="@+id/timeFilters"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:horizontalSpacing="25dp"
+            app:verticalSpacing="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="23dp" >
+
+        <RadioButton
+            android:id="@+id/noTypeFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="15.4dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/bg_condition"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="不限类型"
+            android:textColor="@color/condition"
+            android:textSize="13.4sp" />
+
+        <com.lailem.app.widget.FlowLayout
+            android:id="@+id/types"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:horizontalSpacing="25dp"
+            app:verticalSpacing="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

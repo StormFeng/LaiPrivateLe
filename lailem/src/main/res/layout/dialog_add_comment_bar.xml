@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F9F9F9"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6.7dp"
+        android:paddingRight="16.3dp"
+        android:paddingTop="6.7dp" >
+
+        <ImageButton
+            android:id="@+id/toggleFace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingLeft="11.5dp"
+            android:paddingRight="11.5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_face" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18.2dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_chat_et_n"
+            android:gravity="center_vertical"
+            android:hint="说点什么吧"
+            android:maxLength="100"
+            android:minHeight="34dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textCursorDrawable="@drawable/text_cursor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="57dp"
+            android:layout_height="27dp"
+            android:background="@drawable/bg_addcomment_bar_send"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.lailem.app.ui.chat.expression.ExpressionView
+        android:id="@+id/faceArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+</LinearLayout>

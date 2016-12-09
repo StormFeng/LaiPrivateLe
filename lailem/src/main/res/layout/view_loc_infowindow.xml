@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_map_infowindow"
+    android:orientation="vertical"
+    android:paddingLeft="13.4dp"
+    android:paddingTop="9.6dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前位置"
+        android:textColor="@color/text_dark_2"
+        android:textSize="15.4sp" />
+
+    <TextView
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.3dp"
+        android:text="广州市天河区思诚路23号宏太智慧谷"
+        android:textColor="@color/text_medium_1"
+        android:textSize="15.4sp" />
+
+</LinearLayout>

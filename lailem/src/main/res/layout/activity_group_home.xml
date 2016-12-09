@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
+
+    <com.lailem.app.widget.pulltorefresh.PullZoomRefresListView
+        android:id="@+id/pullToRefreshListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@color/topbar_bg">
+
+        <ImageButton
+            android:id="@+id/topbarBack_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="15dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/ic_topbar_back" />
+
+        <TextView
+            android:id="@+id/topbarBack_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="31dp"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="@color/topbar_white"
+            android:textSize="16.3sp" />
+
+        <ImageButton
+            android:id="@+id/topbarMore"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@drawable/ic_topbar_more" />
+
+        <ImageButton
+            android:id="@+id/topbarMore2"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@drawable/ic_topbar_more_2" />
+
+        <TextView
+            android:id="@+id/topbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="群组详情"
+            android:textColor="@color/topbar_white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/topbarProgressBar"
+            android:layout_width="20dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/dp_progress_rotation"
+            android:indeterminateDuration="10"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/enterGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#72CF74"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="加入群组"
+            android:textColor="@color/white"
+            android:textSize="19.2sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_chat_float"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/bg_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/bg_adddynamic_float" />
+
+            <ImageView
+                android:id="@+id/ic_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_adddynamic_float" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

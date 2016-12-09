@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="13dp"
+                android:text="请选择举报类型"
+                android:textColor="@color/text_medium_2"
+                android:textSize="14sp"/>
+
+            <RadioGroup
+                android:id="@+id/reasonRg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.4dp"
+                android:background="@drawable/c_divider_line"/>
+
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="left|top"
+                android:hint="请输入举报原因（可选）"
+                android:maxLength="1000"
+                android:minHeight="123dp"
+                android:padding="10dp"
+                android:textColor="@color/text_dark_2"
+                android:textColorHint="@color/text_low_2"
+                android:textCursorDrawable="@drawable/text_cursor"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="153dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="41dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_capsule_orange_btn"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="15.4sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

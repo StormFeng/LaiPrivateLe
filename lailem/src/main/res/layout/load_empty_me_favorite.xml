@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="30dp"
+        android:drawableTop="@drawable/ic_me_favorite_empty"
+        android:gravity="center_horizontal"
+        android:text="时光飞逝，您的收藏还是空的"
+        android:textColor="@color/text_medium_2"
+        android:textSize="15.4sp" />
+
+</LinearLayout>

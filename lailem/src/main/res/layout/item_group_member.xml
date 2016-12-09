@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/c_item_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="10.1dp"
+    android:paddingLeft="11.5dp"
+    android:paddingRight="11.7dp"
+    android:paddingTop="10.1dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="52.8dp"
+        android:layout_height="52.84dp"
+        android:layout_marginRight="11.5dp"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="100dp"
+                    android:maxLines="1"
+                    android:text="林若曦林若曦林若曦林若曦林若曦林若曦林若曦"
+                    android:textColor="#222222"
+                    android:textSize="15.4sp" />
+
+                <LinearLayout
+                    android:id="@+id/sexAgeArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7.4dp"
+                    android:background="@drawable/bg_female"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_female" />
+
+                    <TextView
+                        android:id="@+id/age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="24"
+                        android:textColor="@color/white"
+                        android:textSize="9.6sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/distanceAndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10km | 3天前"
+                android:visibility="gone"
+                android:textColor="#999999"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="都不知道说些什么好了。都不知道说些什么好了。都不知道说些什么好了。"
+            android:textColor="@color/text_medium_2"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_phone_call_selector" />
+
+</LinearLayout>

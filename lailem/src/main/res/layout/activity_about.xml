@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:clipToPadding="false"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="204.5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="76.8dp"
+                    android:layout_height="76.8dp"
+                    android:layout_marginTop="48dp"
+                    android:src="@drawable/logo"/>
+
+                <TextView
+                    android:id="@+id/versionName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18.2dp"
+                    android:text="活动吧 Ver 1.0"
+                    android:textColor="@color/text_medium_2"
+                    android:textSize="13.4sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+
+            <LinearLayout
+                android:id="@+id/checkUpdate_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:minHeight="47dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp"
+                android:paddingRight="15.6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="检查更新"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp"/>
+
+                <TextView
+                    android:id="@+id/checkUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="检查版本中..."
+                    android:textColor="@color/text_medium_2"
+                    android:textSize="15.4sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11.6dp"
+                    android:background="@drawable/ic_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_inset_line_15dot4"/>
+
+            <LinearLayout
+                android:id="@+id/addComment_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:minHeight="47dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp"
+                android:paddingRight="15.6dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我要评价"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11.6dp"
+                    android:background="@drawable/ic_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_inset_line_15dot4"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/protocol_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:minHeight="47dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp"
+                android:paddingRight="15.6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="服务声明"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11.6dp"
+                    android:background="@drawable/ic_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_inset_line_15dot4"/>
+
+            <LinearLayout
+                android:id="@+id/about_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_item_selector"
+                android:gravity="center_vertical"
+                android:minHeight="47dp"
+                android:orientation="horizontal"
+                android:paddingLeft="15.4dp"
+                android:paddingRight="15.6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于来了"
+                    android:textColor="@color/text_dark_2"
+                    android:textSize="15.4sp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11.6dp"
+                    android:background="@drawable/ic_arrow"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c_divider_line"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

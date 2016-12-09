@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_back_black"
+            android:drawablePadding="4dp"
+            android:paddingBottom="15.4dp"
+            android:paddingLeft="9.6dp"
+            android:paddingTop="15.4dp"
+            android:text="返回"
+            android:textColor="#222222"
+            android:textSize="16.3sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/headTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28.7dp"
+                android:text="第三方登录"
+                android:textColor="@color/text_dark_1"
+                android:textSize="19.2sp"/>
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="33dp"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="草在结它的种子，风在摇们站着，不说话，就十分美好"
+                android:textColor="@color/text_medium_2"
+                android:textSize="14.4sp"/>
+
+            <TextView
+                android:id="@+id/loginWeixin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/bg_login_weixin"
+                android:drawableLeft="@drawable/ic_login_weixin"
+                android:gravity="center"
+                android:paddingLeft="16.3dp"
+                android:paddingRight="46.3dp"
+                android:text="微信登录"
+                android:textColor="@android:color/white"
+                android:textSize="16.3sp"/>
+
+            <TextView
+                android:id="@+id/loginQQ"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="36.5dp"
+                android:background="@drawable/bg_login_qq"
+                android:drawableLeft="@drawable/ic_login_qq"
+                android:gravity="center"
+                android:paddingLeft="16.3dp"
+                android:paddingRight="46.3dp"
+                android:text="QQ登录"
+                android:textColor="@android:color/white"
+                android:textSize="16.3sp"/>
+
+            <TextView
+                android:id="@+id/loginWeibo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="36.5dp"
+                android:background="@drawable/bg_login_weibo"
+                android:drawableLeft="@drawable/ic_login_weibo"
+                android:gravity="center"
+                android:paddingLeft="16.3dp"
+                android:paddingRight="46.3dp"
+                android:text="微博登录"
+                android:textColor="@android:color/white"
+                android:textSize="16.3sp"/>
+
+            <TextView
+                android:id="@+id/thirdUserInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

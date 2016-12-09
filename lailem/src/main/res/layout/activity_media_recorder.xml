@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <com.lailem.app.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/videoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.yixia.camera.view.CameraNdkView
+            android:id="@+id/record_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <com.lailem.app.ui.video.play.VideoPlayView
+            android:id="@+id/play_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.lailem.app.ui.video.play.VideoPlayView>
+    </RelativeLayout>
+
+    <com.lailem.app.ui.video.record.RecordVideoView
+        android:id="@+id/record_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

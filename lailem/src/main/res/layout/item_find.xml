@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 活动/寻找小伙伴_查找 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="12.9dp"
+    android:paddingLeft="15.4dp"
+    android:paddingTop="15.4dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="林若曦"
+            android:textColor="@color/text_dark_2"
+            android:textSize="15.4sp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.2dp"
+            android:text="距活动地点1.2km"
+            android:textColor="@color/text_medium_1"
+            android:textSize="13.4sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="23dp"
+        android:src="@drawable/ic_location" />
+
+</LinearLayout>

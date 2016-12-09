@@ -1,0 +1,9 @@
+include ':lailemBaidu'
+include ':lailemDaoCore'
+include ':lailemWeiboSDK'
+include ':lailemchat'
+include ':lailemimageloader'
+include ':lailemzxing'
+include ':lailem'
+include ':lailemQupaiSdk101'
+

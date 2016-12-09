@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 发表活动动态选择类型 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#F9F9F9"
+            android:paddingLeft="17.3dp"
+            android:paddingTop="15.4dp"
+            android:text="发表"
+            android:textColor="#222222"
+            android:textSize="16.3sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43.1dp"
+            android:layout_marginTop="40.3dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="拍照"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.7dp"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="相册"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.7dp"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="视频"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43.1dp"
+            android:layout_marginTop="35.9dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/vioce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="录音"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.7dp"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="文字"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.7dp"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="位置"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="43.1dp"
+            android:layout_marginTop="35.9dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="投票"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.7dp"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="日程"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="44.7dp"
+                android:layout_marginTop="13.4dp"
+                android:drawablePadding="13.4dp"
+                android:drawableTop="@drawable/ic_create_active_type_toupiao"
+                android:gravity="center_horizontal"
+                android:text="群通知"
+                android:textColor="#222222"
+                android:textSize="13.4sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:paddingBottom="15.4dp"
+        android:paddingTop="17.2dp" >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="46.1dp"
+            android:layout_height="46.1dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15.4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_create_active_type_zidingyi" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="23.5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_dialog_close" />
+    </FrameLayout>
+
+</LinearLayout>

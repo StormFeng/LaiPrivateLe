@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Laile.iml" filepath="$PROJECT_DIR$/Laile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailem/lailem.iml" filepath="$PROJECT_DIR$/lailem/lailem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemBaidu/lailemBaidu.iml" filepath="$PROJECT_DIR$/lailemBaidu/lailemBaidu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemDaoCore/lailemDaoCore.iml" filepath="$PROJECT_DIR$/lailemDaoCore/lailemDaoCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemQupaiSdk101/lailemQupaiSdk101.iml" filepath="$PROJECT_DIR$/lailemQupaiSdk101/lailemQupaiSdk101.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemWeiboSDK/lailemWeiboSDK.iml" filepath="$PROJECT_DIR$/lailemWeiboSDK/lailemWeiboSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemchat/lailemchat.iml" filepath="$PROJECT_DIR$/lailemchat/lailemchat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemimageloader/lailemimageloader.iml" filepath="$PROJECT_DIR$/lailemimageloader/lailemimageloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lailemzxing/lailemzxing.iml" filepath="$PROJECT_DIR$/lailemzxing/lailemzxing.iml" />
+    </modules>
+  </component>
+</project>

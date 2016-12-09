@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.4dp"
+        android:background="@drawable/c_divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33.4dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/addfavor_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector">
+
+            <TextView
+                android:id="@+id/addfavor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_addfavor"
+                android:drawablePadding="5.8dp"
+                android:text="18"
+                android:textColor="#999999"
+                android:textSize="12.5dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:id="@+id/addcomment_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector">
+
+            <TextView
+                android:id="@+id/addcomment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_addcomment"
+                android:drawablePadding="5.8dp"
+                android:text="18"
+                android:textColor="#999999"
+                android:textSize="12.5dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:id="@+id/addZan_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector">
+
+            <TextView
+                android:id="@+id/addZan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_addzan"
+                android:drawablePadding="5.8dp"
+                android:text="124"
+                android:textColor="#999999"
+                android:textSize="12.5dp"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="13dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/line"/>
+
+        <RelativeLayout
+            android:id="@+id/more_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/c_item_selector">
+
+            <ImageView
+                android:id="@+id/more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_actionbar_more"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/c_divider_line"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7.7dp"
+        android:background="@color/window_bg"/>
+
+</LinearLayout>

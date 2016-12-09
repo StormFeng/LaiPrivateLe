@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="57.6dp"
+            android:layout_height="57.6dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.7dp"
+            android:gravity="center"
+            android:text="善良如我"
+            android:textColor="@color/text_medium_1"
+            android:textSize="11.5sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_black_delete"
+        android:visibility="gone" />
+
+</FrameLayout>

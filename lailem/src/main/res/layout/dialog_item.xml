@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/dataBase"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_middle_item_bg"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:singleLine="true"
+    android:text="item"
+    android:textColor="#ff037AFF"
+    android:textSize="17dp"/>

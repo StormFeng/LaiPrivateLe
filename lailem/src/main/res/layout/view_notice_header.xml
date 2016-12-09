@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingBottom="15.4dp"
+             android:paddingLeft="15.4dp"
+             android:paddingRight="15.4dp"
+             android:paddingTop="15.4dp">
+
+    <TextView
+        android:id="@+id/header_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_notice"
+        android:gravity="center"
+        android:text="您有2条动态消息"
+        android:textColor="@color/white"
+        android:textSize="13.4sp"/>
+
+</FrameLayout>

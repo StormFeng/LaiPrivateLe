@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.lailem.app.widget.ImageViewFit
+        android:id="@+id/mapImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/empty"
+        app:proportion="0.4430" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.7dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:src="@drawable/ic_quotation_left" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.7dp"
+            android:layout_marginLeft="17.3dp"
+            android:layout_marginRight="17.3dp"
+            android:layout_marginTop="8.7dp"
+            android:layout_weight="1"
+            android:text="广东省广州市天河区思成路23号宏太智慧谷"
+            android:textColor="@color/text_dark_2"
+            android:textSize="14.4sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/ic_quotation_right" />
+    </LinearLayout>
+
+</LinearLayout>
