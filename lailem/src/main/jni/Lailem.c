@@ -845,7 +845,7 @@ jstring Java_com_lailem_app_jni_JniSharedLibrary_hostForChat(JNIEnv *env,
                                         "****************************************120.55.205.185");
         case 2:
             return (*env)->NewStringUTF(env,
-                                        "****************************************121.40.97.52");
+                                        "****************************************192.168.0.188");
         case 3:
             return (*env)->NewStringUTF(env,
                                         "****************************************192.168.1.195");
@@ -892,7 +892,7 @@ jstring Java_com_lailem_app_jni_JniSharedLibrary_domain(JNIEnv *env,
                                         "****************************************http://app.lailem.com/LaiLeApp/");;
         case 2:
             return (*env)->NewStringUTF(env,
-                                        "****************************************http://121.40.97.52:8080/LaiLeApp/");
+                                        "****************************************http://192.168.0.188:8080/LaiLeApp/");
         case 3:
             return (*env)->NewStringUTF(env,
                                         "****************************************http://192.168.1.115:8080/LaiLeApp/");
@@ -911,7 +911,7 @@ jstring Java_com_lailem_app_jni_JniSharedLibrary_domainWeb(JNIEnv *env,
                                         "****************************************http://m.lailem.com/");;
         case 2:
             return (*env)->NewStringUTF(env,
-                                        "****************************************http://121.40.97.52:8080/LaiLeWeb/");
+                                        "****************************************http://192.168.0.188:8080/LaiLeWeb/");
         case 3:
             return (*env)->NewStringUTF(env,
                                         "****************************************http://192.168.1.115:8080/LaiLeWeb/");

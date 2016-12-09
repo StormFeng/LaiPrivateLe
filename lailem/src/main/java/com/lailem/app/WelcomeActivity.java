@@ -25,58 +25,68 @@ public class WelcomeActivity extends Activity {
             return;
         }
         setContentView(R.layout.activity_welcome);
-        callback = new ConfigManager.OnConfigUpdateCallback() {
-
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onStart() {
+            public void run() {
+                Intent intent = new Intent(WelcomeActivity.this, AppStart.class);
+                startActivity(intent);
+                finish();
             }
-
-            @Override
-            public void onSuccess() {
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent intent = new Intent(WelcomeActivity.this, AppStart.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                }, 2000);
-            }
+        }, 2000);
 
 
-            @Override
-            public void onError() {
-                if (dialog == null) {
-                    dialog = new ConfirmDialog(WelcomeActivity.this, R.style.confirm_dialog).config("错误提示", "初始化失败，请检查网络设置", "重试", "检查设置", new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            ConfigManager.getConfigManager().checkConfigVersion(callback);
-                        }
-                    }, new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Settings.ACTION_WIRELESS_SETTINGS);
-                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                            startActivity(intent);
-                        }
-                    });
-
-                    dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-                        @Override
-                        public void onDismiss(DialogInterface dialog) {
-                            ConfigManager.getConfigManager().checkConfigVersion(callback);
-                        }
-                    });
-                }
-                dialog.show();
-            }
-        };
+//        callback = new ConfigManager.OnConfigUpdateCallback() {
+//
+//            @Override
+//            public void onStart() {
+//            }
+//
+//            @Override
+//            public void onSuccess() {
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Intent intent = new Intent(WelcomeActivity.this, AppStart.class);
+//                        startActivity(intent);
+//                        finish();
+//                    }
+//                }, 2000);
+//            }
+//
+//
+//            @Override
+//            public void onError() {
+//                if (dialog == null) {
+//                    dialog = new ConfirmDialog(WelcomeActivity.this, R.style.confirm_dialog).config("错误提示", "初始化失败，请检查网络设置", "重试", "检查设置", new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            ConfigManager.getConfigManager().checkConfigVersion(callback);
+//                        }
+//                    }, new View.OnClickListener() {
+//                        @Override
+//                        public void onClick(View v) {
+//                            Intent intent = new Intent(Settings.ACTION_WIRELESS_SETTINGS);
+//                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                            startActivity(intent);
+//                        }
+//                    });
+//
+//                    dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+//                        @Override
+//                        public void onDismiss(DialogInterface dialog) {
+//                            ConfigManager.getConfigManager().checkConfigVersion(callback);
+//                        }
+//                    });
+//                }
+//                dialog.show();
+//            }
+//        };
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        ConfigManager.getConfigManager().checkConfigVersion(callback);
-
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        ConfigManager.getConfigManager().checkConfigVersion(callback);
+//
+//    }
 }
